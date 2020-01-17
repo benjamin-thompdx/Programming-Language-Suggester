@@ -1,6 +1,6 @@
 // Front-end
 
-.btn {
+.btn-primary {
   display: block;
 }
 
@@ -14,6 +14,9 @@ $(document).ready(function() {
   $("form#language-suggester").submit(function(event) {
     var skills = $("#skill-level").val();
     var results = $("input:radio[name=desired-results]:checked").val();
+    var money = $("#money").val();
+    var dominance = $("select#dominance").val();
+    var monitor = $("select#monitor").val();
 
     if (age) {
       var quote = (100 - age) * 3;

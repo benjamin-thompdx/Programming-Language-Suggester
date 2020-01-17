@@ -16,7 +16,7 @@
 
       <br>
       <form id="language-suggester">
-        <p>How do you describe your skill level in coding?</p>
+        <p>How would you describe your skill level in coding?</p>
         <select class="form-control" id="skill-level">
           <option>Intermediate</option>
           <option>Advanced</option>
@@ -51,10 +51,23 @@
             <option>No</option>
           </select>
         </div>
+        <br>
+        
+        <label for="dominance">Hand Dominance</label>
+        <select id="dominance">
+          <option value="left">Left-handed</option>
+          <option value="right">Right-handed</option>
+        </select>
+
+        <label for="monitor">Monitor Preference</label>
+        <select id="monitor">
+          <option value="one">One Monitor</option>
+          <option value="multiple">Multiple Monitors</option>
+        </select>
 
 
 
-        <button type="submit" class="btn">Calculate my quote</button>
+        <button type="submit" class="btn-primary">Show me my results</button>
       </form>
 
       <div id="quote">
