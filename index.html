@@ -12,6 +12,7 @@
       <h1>Programming Language Suggester</h1>
 
       <p>To provide you with a suggestion for what language you should learn, we need to know a little about you:</p>
+      <br>
 
       <form id="language-suggester">
         <p>How do you describe your skill level in coding?</p>
@@ -20,6 +21,29 @@
           <option>Advanced</option>
           <option>Expert</option>
         </select>
+        <br>
+
+        <p>What are your desired results?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="desired-result" value="learn-basics">
+            Build a foundation in coding
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="desired-result" value="learn-more">
+            I understand JavaScript and want to take my skills to the next level
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="desired-result" value="learn-new">
+            I am confident in my coding skills and want to learn something new 
+          </label>
+        </div>
+
+
 
         <button type="submit" class="btn">Calculate my quote</button>
       </form>
