@@ -12,8 +12,7 @@
 
 $(document).ready(function() {
   $("form#language-suggester").submit(function(event) {
-    var age = parseInt($("input#age").val());
-    var gender = $("select#gender").val();
+    var results = $("input:radio[name=desired-results]:checked").val();
 
     if (age) {
       var quote = (100 - age) * 3;
