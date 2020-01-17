@@ -1,34 +1,9 @@
-// Front-end
-
-.btn {
-  display: block;
-}
-
-#code {
-  display: none;
-}
-
-// Back-end
-
-$(document).ready(function() {
-  $("form#language-suggester").submit(function(event){
-//    var skills = $("#skill-level").val();
-//    var results = $("input:radio[name=desired-results]:checked").val();
-//    var money = $("#money").val();
-    var dominance = $("select#dominance").val();
-//    var monitor = $("select#monitor").val();
-
-    if (dominance === 'left') {
-      code = JavaScript;
-    } else if (dominance === 'right') {
-      code = React;
-    } else {
-      code = Cow;
-    }
-
-    $("#suggestion").empty().append(code);
-    $("#code").show();
-
-    event.preventDefault();
-  });
-});
+$(document).ready(function(){
+  $("form#language-suggester").submit(function(){
+    $("#language-suggester").hide();
+    $(".opening").hide();
+    userSkill = $("input:radio[name=skill]:checked").val();
+    userResults = $("input:radio[name=results]:checked").val();
+    userMoney = $("input:radio[name=money]:checked").val();
+    userDominance = $("input:radio[name=dominance]:checked").val();
+    userMonitor = $("input:radio[name=monitor]:checked").val();
