@@ -9,17 +9,16 @@
   </head>
   <body>
     <div class="container">
-      <h1>Car insurance</h1>
+      <h1>Programming Language Suggester</h1>
 
-      <p>To give you a quote, we need to know a little about you:</p>
+      <p>To provide you with a suggestion for what language you should learn, we need to know a little about you:</p>
 
-      <form id="insurance">
-        <label for="age">Age</label>
-        <input id="age" type="text">
-        <label for="gender">Gender</label>
-        <select id="gender">
-          <option value="female">Female</option>
-          <option value="male">Male</option>
+      <form id="language-suggester">
+        <p>How do you describe your skill level in coding?</p>
+        <select class="form-control" id="skill-level">
+          <option>Intermediate</option>
+          <option>Advanced</option>
+          <option>Expert</option>
         </select>
 
         <button type="submit" class="btn">Calculate my quote</button>

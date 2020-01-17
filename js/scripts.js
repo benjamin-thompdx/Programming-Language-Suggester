@@ -11,7 +11,7 @@
 // Back-end
 
 $(document).ready(function() {
-  $("form#insurance").submit(function(event) {
+  $("form#language-suggester").submit(function(event) {
     var age = parseInt($("input#age").val());
     var gender = $("select#gender").val();
 
