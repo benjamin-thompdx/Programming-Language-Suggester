@@ -4,7 +4,7 @@
   display: block;
 }
 
-#quote {
+#code {
   display: none;
 }
 
@@ -18,16 +18,14 @@ $(document).ready(function() {
     var dominance = $("select#dominance").val();
     var monitor = $("select#monitor").val();
 
-    if (age) {
-      var quote = (100 - age) * 3;
+    if (skills) {
+      var code = JavaScript;
       if (gender === 'male' && age < 26) {
-        quote += 50;
+        code = React;
       }
 
-      $("#rate").empty().append(quote);
-      $("#quote").show();
     } else {
-      alert('Please enter your age.');
+      code = Cow;
     }
 
     event.preventDefault();
