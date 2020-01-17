@@ -1,6 +1,6 @@
 // Front-end
 
-.btn-primary {
+.btn {
   display: block;
 }
 
@@ -11,7 +11,7 @@
 // Back-end
 
 $(document).ready(function() {
-  $("form#language-suggester").submit(function(event) {
+  $("form#language-suggester").submit(function(event){
 //    var skills = $("#skill-level").val();
 //    var results = $("input:radio[name=desired-results]:checked").val();
 //    var money = $("#money").val();
@@ -26,8 +26,8 @@ $(document).ready(function() {
       code = Cow;
     }
 
-      $("#suggestion").empty().append(code);
-      $("#code").show();
+    $("#suggestion").empty().append(code);
+    $("#code").show();
 
     event.preventDefault();
   });

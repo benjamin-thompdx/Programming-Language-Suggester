@@ -11,68 +11,89 @@
     <div class="container">
       <h1>Programming Language Suggester</h1>
 
-      <p>To provide you with a suggestion for what language you should learn, we need to know a little about you:</p>
-      <br>
+      <p>
+        To provide you with a suggestion for what language you should learn, we
+        need to know a little about you:
+      </p>
+      <br />
 
-      <br>
+      <br />
       <form id="language-suggester">
-        <p>How would you describe your skill level in coding?</p>
-        <select class="form-control" id="skill-level">
-          <option>Intermediate</option>
-          <option>Advanced</option>
-          <option>Expert</option>
-        </select>
-        <br>
-
-        <p>What are your desired results?</p>
-        <div class="radio">
+        <div class="skill">
+          <h4>How would you describe your skill level in coding?</h4>
           <label>
-            <input type="radio" name="desired-results" value="learn-basics">
+            <input type="radio" name="skill" value="intermediate">
+            Intermediate
+          </label>
+          <label>
+            <input type="radio" name="skill" value="advanced">
+            Advanced
+          </label>
+          <label>
+            <input type="radio" name="skill" value="expert">
+            Expert
+          </label>
+        </div>
+        <div class="results">
+          <h4>What are your desired results?</h4>
+          <label>
+            <input type="radio" name="results" value="basics">
             Build a foundation in coding
           </label>
-        </div>
-        <div class="radio">
           <label>
-            <input type="radio" name="desired-results" value="learn-more">
+            <input type="radio" name="results" value="more">
             I understand JavaScript and want to take my skills to the next level
           </label>
-        </div>
-        <div class="radio">
           <label>
-            <input type="radio" name="desired-results" value="learn-new">
-            I am confident in my coding skills and want to learn something new 
+            <input type="radio" name="results" value="new">
+            I am confident in my coding skills and want to learn something new
+          </label>
+        </div>
+        <div class="money">
+          <h4>Is money a factor?</h4>
+          <label>
+            <input type="radio" name="money" value="yes">
+            Yeah, i'm looking to become the next Bil Gates
+          </label>
+          <label>
+            <input type="radio" name="money" value="no">
+            Nah, I just want to learn something new
+          </label>
+        </div>
+        <div class="dominance">
+          <h4>What hand is your dominant hand?</h4>
+          <label>
+            <input type="radio" name="dominance" value="left">
+            I'm left handed
+          </label>
+          <label>
+            <input type="radio" name="dominance" value="right">
+            I'm right handed
+          </label>
+          <label>
+            <input type="radio" name="dominance" value="ambidextrous">
+            I'm ambidextrous
+          </label>
+        </div>
+        <div class="monitor">
+          <h4>What is your monitor preference?</h4>
+          <label>
+            <input type="radio" name="monitor" value="single">
+            One monitor works fine for me
+          </label>
+          <label>
+            <input type="radio" name="monitor" value="multiple">
+            I am somewhat of a monitor connoisseur
           </label>
           <br>
-          
-          <br>
-          <p>Is money a factor?</p>
-          <select class="form-control" id="money">
-            <option>Yes</option>
-            <option>No</option>
-          </select>
+          <button class="btn btn-default">Show me my results!</button>
         </div>
-        <br>
-        
-        <label for="dominance">Hand Dominance</label>
-        <select id="dominance">
-          <option value="left">Left-handed</option>
-          <option value="right">Right-handed</option>
-          <option value="ambidextrous">Ambidextrous</option>
-        </select>
-
-        <label for="monitor">Monitor Preference</label>
-        <select id="monitor">
-          <option value="one">One Monitor</option>
-          <option value="multiple">Multiple Monitors</option>
-        </select>
-
-
-
-        <button type="submit" class="btn-primary">Show me my results</button>
       </form>
 
       <div id="code">
-        <p>We suggest you learn $<span id="suggestion"></span> . Happy learning!</p>
+        <p>
+          We suggest you learn $<span id="suggestion"></span> . Happy learning!
+        </p>
       </div>
     </div>
   </body>
