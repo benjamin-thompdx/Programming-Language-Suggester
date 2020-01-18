@@ -1,7 +1,27 @@
-h3 {
-  text-decoration: underline;
+h1 { 
+  color: blue;
 }
 
 h4 {
   color: blue;
+}
+
+html, body {
+  height: 100%;
+}
+
+.flex-container {
+  display: flex;
+  background-color: beige;
+  opacity: 0.9;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  color: purple;
+  background-size: cover;
+  height: 100%;
+}
+
+.result {
+  display: none;
 }
