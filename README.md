@@ -24,16 +24,15 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-_Have feedback, found a bug, or just want to say hi? See out contact information below!_
+### Contact Information:
+_Have feedback, found a bug, or just want to say hi? See below for contact information!_  
+_Benjamin@LanguageSuggester.io_
 
-Languge
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+Boostrap, JavaScript, and jQuery
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
-
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_{Benjamin Thom}_**
