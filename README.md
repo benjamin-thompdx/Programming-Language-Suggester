@@ -35,4 +35,4 @@ Boostrap, JavaScript, and jQuery
 
 ### License
 
-Copyright (c) 2020 **_Benjamin Thom}**
+Copyright (c) 2020 **_Benjamin Thom_**
